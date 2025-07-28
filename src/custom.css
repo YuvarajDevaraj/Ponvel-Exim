@@ -1,0 +1,96 @@
+.ant-layout {
+  background: #fff;
+}
+.logo {
+  width: auto;
+  padding: 10px 0;
+}
+.header {
+  height: 80px;
+  background-color: #02326e;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+.footer {
+  padding: 0;
+}
+.Nav-menu,
+.Nav-menu a {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px !important;
+  border: none !important;
+  font-weight: 500;
+}
+.Nav-menu span {
+  color: #fff;
+}
+.Nav-menu ul li {
+  padding-inline: 25px;
+}
+.search,
+.search:hover,
+.search:focus,
+.search:focus-within {
+  background: transparent;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  display: lex;
+  align-items: center;
+  gap: 5px;
+  color: #999 !important;
+  box-shadow: none;
+}
+.Nav-menu input::placeholder {
+  color: #999 !important;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.desktop-menu {
+  flex: 1;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
+.mobile-toggle button {
+  color: #fff;
+  border: 1px solid;
+}
+
+.ant-drawer-body {
+  padding: 20px !important;
+}
+.search-results {
+  color: #000 !important;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .main-menu {
+    float: right;
+  }
+  .mobile-toggle {
+    display: block;
+    float: right;
+  }
+
+  .search {
+    width: 100% !important;
+  }
+}

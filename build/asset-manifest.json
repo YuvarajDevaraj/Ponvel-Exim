@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5108226.css",
+    "main.js": "/static/js/main.6b012804.js",
+    "static/js/453.46a49f09.chunk.js": "/static/js/453.46a49f09.chunk.js",
+    "static/media/Contact_Image.png": "/static/media/Contact_Image.23171dff602f07ddc56c.png",
+    "static/media/Footer_bg.png": "/static/media/Footer_bg.d0fa4fe621b9523a6397.png",
+    "static/media/Slider3.png": "/static/media/Slider3.7062afdbcbb89da770a5.png",
+    "static/media/Slider2.png": "/static/media/Slider2.9993fea2e45a14775f1d.png",
+    "static/media/Why Us.png": "/static/media/Why Us.f05890ba4b56da57c8a6.png",
+    "static/media/Shipment_bg.png": "/static/media/Shipment_bg.5e3c54eb4516b00f1e2c.png",
+    "static/media/Slider4.png": "/static/media/Slider4.06c563009cf94802397d.png",
+    "static/media/Slider1.png": "/static/media/Slider1.9f761475296747482274.png",
+    "static/media/customer_bg.png": "/static/media/customer_bg.a8334ef7cc07943073e9.png",
+    "static/media/Contact_Bg.png": "/static/media/Contact_Bg.fdaa69809590386b20a2.png",
+    "static/media/map-bg.png": "/static/media/map-bg.5aaca390a04320813c79.png",
+    "static/media/PONVEL EXIM FIEO.png": "/static/media/PONVEL EXIM FIEO.79a0cfed9999c881efc0.png",
+    "static/media/contact_screen.png": "/static/media/contact_screen.60b5c81a5dddda46fd01.png",
+    "static/media/FSSAI PONVEL EXIM.png": "/static/media/FSSAI PONVEL EXIM.659ebbbcd258a695702a.png",
+    "static/media/bearbitz.png": "/static/media/bearbitz.d757bdfe9b39255aba94.png",
+    "static/media/lick n chew.png": "/static/media/lick n chew.04cbf21df703909fa9f9.png",
+    "static/media/fonnts.com-Kohinoor_Semibold.woff2": "/static/media/fonnts.com-Kohinoor_Semibold.35456b4876a943ef9e73.woff2",
+    "index.html": "/index.html",
+    "main.e5108226.css.map": "/static/css/main.e5108226.css.map",
+    "main.6b012804.js.map": "/static/js/main.6b012804.js.map",
+    "453.46a49f09.chunk.js.map": "/static/js/453.46a49f09.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5108226.css",
+    "static/js/main.6b012804.js"
+  ]
+}
