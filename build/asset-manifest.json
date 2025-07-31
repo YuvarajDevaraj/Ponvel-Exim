@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5108226.css",
-    "main.js": "/static/js/main.6b012804.js",
+    "main.css": "/static/css/main.9a50986a.css",
+    "main.js": "/static/js/main.1d29a996.js",
     "static/js/453.46a49f09.chunk.js": "/static/js/453.46a49f09.chunk.js",
     "static/media/Contact_Image.png": "/static/media/Contact_Image.23171dff602f07ddc56c.png",
     "static/media/Footer_bg.png": "/static/media/Footer_bg.d0fa4fe621b9523a6397.png",
@@ -21,12 +21,12 @@
     "static/media/lick n chew.png": "/static/media/lick n chew.04cbf21df703909fa9f9.png",
     "static/media/fonnts.com-Kohinoor_Semibold.woff2": "/static/media/fonnts.com-Kohinoor_Semibold.35456b4876a943ef9e73.woff2",
     "index.html": "/index.html",
-    "main.e5108226.css.map": "/static/css/main.e5108226.css.map",
-    "main.6b012804.js.map": "/static/js/main.6b012804.js.map",
+    "main.9a50986a.css.map": "/static/css/main.9a50986a.css.map",
+    "main.1d29a996.js.map": "/static/js/main.1d29a996.js.map",
     "453.46a49f09.chunk.js.map": "/static/js/453.46a49f09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5108226.css",
-    "static/js/main.6b012804.js"
+    "static/css/main.9a50986a.css",
+    "static/js/main.1d29a996.js"
   ]
 }
