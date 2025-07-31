@@ -1,0 +1,72 @@
+.shipping h2 {
+  text-align: center;
+  color: #02326e;
+}
+.shipping-section {
+  position: relative;
+  background-image: url("../../src/assets/Why\ Us.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #a0cfff;
+  min-height: 800px;
+}
+
+.ship-image-icon {
+  padding: 15px;
+  border: 2px dashed #02326e;
+  border-radius: 50%;
+}
+
+.overlay-features {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  z-index: 2;
+}
+
+.overlay-features.left {
+  left: 5%;
+}
+.overlay-features.center {
+  left: 45%;
+  top: 15%;
+}
+.overlay-features.right {
+  right: 5%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1c1c1c;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .shipping-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .overlay-features {
+    position: initial;
+    top: 30%;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    z-index: 2;
+  }
+  .overlay-features.center {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+  .right {
+    min-width: 100%;
+  }
+}

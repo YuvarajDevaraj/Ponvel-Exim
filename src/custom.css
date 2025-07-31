@@ -1,10 +1,12 @@
 .ant-layout {
   background: #fff;
 }
+
 .logo {
   width: auto;
   padding: 10px 0;
 }
+
 .header {
   height: 80px;
   background-color: #02326e;
@@ -12,9 +14,11 @@
   top: 0;
   z-index: 1001;
 }
+
 .footer {
   padding: 0;
 }
+
 .Nav-menu,
 .Nav-menu a {
   background-color: transparent;
@@ -23,27 +27,15 @@
   border: none !important;
   font-weight: 500;
 }
+
 .Nav-menu span {
   color: #fff;
 }
+
 .Nav-menu ul li {
   padding-inline: 25px;
 }
-.search,
-.search:hover,
-.search:focus,
-.search:focus-within {
-  background: transparent;
-  border: none;
-  width: 100px;
-  cursor: pointer;
-  font-size: 16px;
-  display: lex;
-  align-items: center;
-  gap: 5px;
-  color: #999 !important;
-  box-shadow: none;
-}
+
 .Nav-menu input::placeholder {
   color: #999 !important;
 }
@@ -71,10 +63,47 @@
 .ant-drawer-body {
   padding: 20px !important;
 }
+
+.desktop-menu ul li:nth-child(5),
+.desktop-menu ul li:nth-child(5):hover,
+.desktop-menu ul li:nth-child(5):focus,
+.desktop-menu ul li:nth-child(5):focus-within,
+.desktop-menu ul li:nth-child(5)::after {
+  border-bottom: none !important;
+}
+
+.search,
+.search:hover,
+.search:focus,
+.search:focus-within {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #999 !important;
+  box-shadow: none;
+}
+
 .search-results {
-  color: #000 !important;
-  background: #fff;
-  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.search-item {
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.search-item:last-child {
+  border-bottom: none;
 }
 
 /* Responsive */
@@ -82,15 +111,23 @@
   .desktop-menu {
     display: none;
   }
+
   .main-menu {
     float: right;
   }
+
   .mobile-toggle {
     display: block;
-    float: right;
   }
 
   .search {
     width: 100% !important;
+  }
+
+  .ant-menu-inline .ant-menu-submenu .ant-menu-item {
+    padding-left: 32px;
+  }
+  .header div {
+    height: 80px;
   }
 }

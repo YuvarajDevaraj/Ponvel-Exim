@@ -5,14 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import "../custom.css";
-import { BearBlitz, LicknChew } from "../../src/url";
+import { BearBlitz, LicknChew, Soon } from "../../src/url";
 
 const Main_menu = () => {
   const [visible, setVisible] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
   const showDrawer = () => setVisible(true);
-  const onClose = () => setVisible(false);
+  const onClose = () => {
+    setVisible(false);
+    setSearchTerm(""); // optional: clear search on drawer close
+  };
 
   const data = [
     "Our Team",
@@ -36,14 +39,8 @@ const Main_menu = () => {
           key: "11",
           type: "group",
           children: [
-            {
-              key: "111",
-              label: <NavLink to="#">Our Team</NavLink>,
-            },
-            {
-              key: "112",
-              label: <NavLink to="#">Our Company</NavLink>,
-            },
+            { key: "111", label: <NavLink to={Soon}>Our Team</NavLink> },
+            { key: "112", label: <NavLink to={Soon}>Our Company</NavLink> },
           ],
         },
       ],
@@ -78,11 +75,11 @@ const Main_menu = () => {
             },
             {
               key: "213",
-              label: <NavLink to="#">Coirs</NavLink>,
+              label: <NavLink to={Soon}>Coirs</NavLink>,
             },
             {
               key: "214",
-              label: <NavLink to="#">Homecare & Personal Care</NavLink>,
+              label: <NavLink to={Soon}>Homecare & Personal Care</NavLink>,
             },
           ],
         },
@@ -96,18 +93,9 @@ const Main_menu = () => {
           key: "31",
           type: "group",
           children: [
-            {
-              key: "311",
-              label: <NavLink to="#">Pictures</NavLink>,
-            },
-            {
-              key: "312",
-              label: <NavLink to="#">Videos</NavLink>,
-            },
-            {
-              key: "313",
-              label: <NavLink to="#">Certificates</NavLink>,
-            },
+            { key: "311", label: <NavLink to={Soon}>Pictures</NavLink> },
+            { key: "312", label: <NavLink to={Soon}>Videos</NavLink> },
+            { key: "313", label: <NavLink to={Soon}>Certificates</NavLink> },
           ],
         },
       ],
@@ -115,17 +103,6 @@ const Main_menu = () => {
     {
       key: "4",
       label: <NavLink to="/contact">Contact</NavLink>,
-    },
-    {
-      key: "5",
-      label: (
-        <Input
-          placeholder="Search"
-          prefix={<FontAwesomeIcon icon={faSearch} />}
-          className="search"
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      ),
     },
   ];
 
@@ -135,10 +112,22 @@ const Main_menu = () => {
         <Menu
           mode="horizontal"
           defaultSelectedKeys={["1"]}
-          items={items}
+          items={[
+            ...items,
+            {
+              key: "5",
+              label: (
+                <Input
+                  placeholder="Search"
+                  prefix={<FontAwesomeIcon icon={faSearch} />}
+                  className="search"
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+              ),
+            },
+          ]}
           className="Nav-menu"
         />
-
         {searchTerm && (
           <div className="search-results">
             {data
@@ -164,8 +153,31 @@ const Main_menu = () => {
         closable={true}
         onClose={onClose}
         open={visible}
-        width={250}>
-        <Menu mode="vertical" items={items} onClick={onClose} />
+        width={280}>
+        <div style={{ padding: "0 8px 1rem" }}>
+          <Input
+            placeholder="Search"
+            prefix={<FontAwesomeIcon icon={faSearch} />}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search"
+          />
+          {searchTerm && (
+            <div className="search-results">
+              {data
+                .filter((item) =>
+                  item.toLowerCase().includes(searchTerm.toLowerCase())
+                )
+                .map((filteredItem, index) => (
+                  <div key={index} className="search-item">
+                    {filteredItem}
+                  </div>
+                ))}
+            </div>
+          )}
+        </div>
+
+        <Menu mode="inline" items={items} onClick={onClose} />
       </Drawer>
     </div>
   );

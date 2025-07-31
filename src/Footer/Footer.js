@@ -50,30 +50,30 @@ const Footers = () => {
             </div>
             <div>
               <p>
-                <a href="" target="_blank">
+                <a href={BearBlitz} target="_blank">
                   Biscuits
                 </a>
               </p>
               <p>
-                <a href="" target="_blank">
+                <a href={LicknChew} target="_blank">
                   Lollipops
                 </a>
               </p>
               <p>
-                <a href="" target="_blank">
-                  Wafers
+                <a href={BearBlitz} target="_blank">
+                  Waffers
                 </a>
               </p>
               <p>
                 {" "}
-                <a href="" target="_blank">
+                <a href={LicknChew} target="_blank">
                   Candies
                 </a>
               </p>
             </div>
             <div>
               <p>
-                <a href="" target="_blank">
+                <a href={LicknChew} target="_blank">
                   Chocolates
                 </a>
               </p>

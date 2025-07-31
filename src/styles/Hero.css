@@ -1,0 +1,25 @@
+.contentStyle{
+  width: 100%;
+}
+.heroContent{
+  position: absolute;
+    top: 17%;
+    padding-left: 70px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.heroContent a{
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+.heroContent{
+  top: 0;
+    padding-left: 10px;
+    font-size: 10px;
+}
+}

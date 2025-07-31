@@ -1,0 +1,133 @@
+.contact-background {
+  background-image: url("../../src/assets/Contact_Image.png");
+  background-size: cover;
+  background-position: top top;
+  background-repeat: no-repeat;
+  padding: 10em 0;
+}
+
+.customer-section {
+  background-image: url("../../src/assets/contact_screen.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7em;
+}
+
+.customer-image {
+  position: sticky;
+  border-radius: 50%;
+  float: right;
+  right: 10%;
+  width: 20%;
+  margin-top: -15%;
+}
+
+.contact-section {
+  display: flex;
+  border-radius: 12px;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 5em;
+}
+
+.contactus-form {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  color: #fff;
+}
+
+.contact-info h3,
+.customer-section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #02326e;
+}
+.contact-line {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.info-box {
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  padding: 0.5rem 2em;
+  margin-bottom: 1rem;
+  position: relative;
+  width: auto;
+  margin: 2em;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  position: absolute;
+  top: -10px;
+  left: 1rem;
+  color: #fff;
+}
+
+.label.office {
+  background-color: #7d94ff;
+}
+
+.label.hours {
+  background-color: #d681f4;
+}
+
+.label.phone {
+  background-color: #ffbe6e;
+}
+
+.label.email {
+  background-color: #63e3b2;
+}
+
+/* 🌐 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 2em 1em;
+    gap: 2rem;
+  }
+  .contactus-form .form-container {
+    background: none;
+  }
+
+  .customer-section {
+    padding: 2em 1em;
+  }
+
+  .customer-image {
+    float: none;
+    width: 60%;
+    margin: 2em auto;
+    display: block;
+    position: static;
+  }
+
+  .contactus-form,
+  .contact-info {
+    flex: 1 1 100%;
+    padding: 1.5rem;
+  }
+
+  .info-box {
+    margin: 1em 0.5em;
+    padding: 1rem 1.5rem;
+  }
+
+  .contact-info h3,
+  .customer-section h1 {
+    font-size: 1.2rem;
+  }
+}

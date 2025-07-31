@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Kohinoor Bangla";
+  src: url("../styles/fonts/fonnts.com-Kohinoor_Semibold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Kohinoor Bangla", sans-serif !important;
+}

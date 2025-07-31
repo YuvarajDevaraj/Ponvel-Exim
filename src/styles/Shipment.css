@@ -1,0 +1,34 @@
+.shipping-banner {
+  position: relative;
+  background: url("../assets/Shipment_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
+.shipping-banner__content {
+  padding-top: 23%;
+  padding-left: 10%;
+}
+
+.shipping-banner__content h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 2;
+  color: #fff;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .shipping-banner {
+    min-height: 100px;
+  }
+  .shipping-banner__content h1 {
+    font-size: 1.2rem;
+  }
+  .shipping-banner__content {
+    padding-top: 16%;
+    padding-left: 10%;
+  }
+}

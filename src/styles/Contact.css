@@ -1,0 +1,65 @@
+.form-contain{
+  display: flex;
+  padding: 4em 0;
+}
+.form-left {
+  flex: 1;
+  margin-left: 30%;
+}
+
+.form-left h2 {
+  color: #002c5f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-left h1 {
+  font-size: 1.5rem;
+  color: #002c5f;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.form-right {
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    background: url("../../src/assets/Contact_Bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .form-left, .form-right {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+
+  .form-left .row {
+    flex-direction: column;
+  }
+
+  .form-left {  
+  margin-left: 0 !important;
+}
+.form-right{
+  display: none;
+}
+}

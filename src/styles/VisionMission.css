@@ -1,0 +1,108 @@
+.vmg-container {
+  position: relative;
+  background: url('../assets/map-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.vmg-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.vmg-block {
+  flex: 1 1 320px;
+  margin: 16px;
+  min-width: auto;
+}
+
+.vmg-block h2 {
+  color: #ffb300;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.vmg-block.vision h2,
+.vmg-block.mission h2 {
+  color: #ffb300;
+}
+
+.vmg-block.goals h2, .vmg-box li::marker{
+  color: #ffb300;
+}
+
+.vmg-box {
+  background: #fff;
+  border: 3px dashed #d3d3d3;
+  border-radius: 20px;
+  padding: 20px 8%;
+  position: relative;
+  min-height: auto;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: center;
+}
+
+.right{
+  max-width: 300px;
+}
+.right-ul{
+  padding-left: 15% !important;
+  text-align: left !important;
+}
+.diamond{
+  top: 40px !important;
+}
+.vmg-icon {
+  font-size: 2rem;
+  position: absolute;
+  left: -32px;
+  top: 16px;
+}
+
+.vmg-block.goals .vmg-icon {
+  left: -32px;
+  top: 12px;
+}
+
+.vmg-box p , .vmg-box li{
+  margin: 0;
+  color: #1a237e;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.vmg-box ul {
+  margin: 0;
+  padding-left: 24px;
+  color: #1976d2;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.vmg-box li {
+  margin-bottom: 6px;
+}
+
+.vmg-container .ant-col-xs-24{
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .vmg-icon {
+    position: static;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .vmg-block h2{
+    text-align: center;
+  }
+}
